@@ -1,5 +1,4 @@
 'use strict';
-
 let secertNumber = genrateRandomNumber(); // math.trunc cut of the decimal part *20 +1 for numbers between 1 to 20
 let score = 20;
 function genrateRandomNumber() {
@@ -46,7 +45,7 @@ document.querySelector('.check').addEventListener('click', function () {
 // Again button
 
 document.querySelector('.again').addEventListener('click', function () {
-  secertNumber - genrateRandomNumber();
+  secertNumber = genrateRandomNumber();
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing';

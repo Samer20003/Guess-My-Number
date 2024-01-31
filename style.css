@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+@media (max-width: 1023px) {
+  header {
+    padding: 120px 20حpx;
+  }
+  .nav {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.6em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .content h2 {
+    font-size: 1em;
+  }
+  .content h3 {
+    font-size: 1em;
+  }
+}
 * {
   margin: 0;
   padding: 0;

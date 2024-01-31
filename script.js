@@ -1,13 +1,17 @@
 'use strict';
-const secertNumber = Math.trunc(Math.random() * 20) + 1; // math.trunc cut of the decimal part *20 +1 for numbers between 1 to 20
+
+let secertNumber = genrateRandomNumber(); // math.trunc cut of the decimal part *20 +1 for numbers between 1 to 20
 let score = 20;
+function genrateRandomNumber() {
+  return Math.trunc(Math.random() * 20) + 1;
+}
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   // if the num is null
   if (!guess) {
     document.querySelector('.message').textContent = 'No number 💢';
   }
-  // When player win
+  // When player wina
   else if (guess === secertNumber) {
     document.querySelector('.message').textContent = 'Correct Number👌';
     document.querySelector('.highscore').textContent = score;
@@ -40,8 +44,9 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 // Again button
+
 document.querySelector('.again').addEventListener('click', function () {
-  const secertNumber = Math.trunc(Math.random() * 20) + 1; // math.trunc cut of the decimal part *20 +1 for numbers between 1 to 20
+  secertNumber - genrateRandomNumber();
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing';

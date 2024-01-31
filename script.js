@@ -41,6 +41,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 // Again button
 document.querySelector('.again').addEventListener('click', function () {
+  const secertNumber = Math.trunc(Math.random() * 20) + 1; // math.trunc cut of the decimal part *20 +1 for numbers between 1 to 20
   document.querySelector('.number').textContent = '?';
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing';

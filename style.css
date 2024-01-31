@@ -1,25 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-@media (max-width: 1023px) {
-  header {
-    padding: 120px 20حpx;
-  }
-  .nav {
-    padding-left: 10px;
-  }
-  .title {
-    font-size: 1.6em;
-  }
-  section {
-    padding: 80px 20px;
-  }
-  .content h2 {
-    font-size: 1em;
-  }
-  .content h3 {
-    font-size: 1em;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -136,4 +116,24 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+  .again {
+    width: 136px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .guess {
+    font-size: 2.5rem;
+    width: 28rem;
+  }
+  .label-score {
+    margin-bottom: 1.2rem;
+  }
+  html {
+    font-size: 34%;
+  }
 }
